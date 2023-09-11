@@ -1,0 +1,66 @@
+
+
+{%extends "layout.html"%}
+{%block content%}
+
+
+    
+    
+    <div class="about">
+      <center><h1>Welcome to Our Multiple Disease Predictor Site</h1>
+      </center>
+      
+      <br/>
+      <br/>
+      <h3>Our trained Machine Learning model can predict whether a person is suffering from a disease or not on the basis of details provided to it.<h3>
+        <br/>
+        <h3><br/>This site offers the following disease prediction:<br/>
+      
+    </h3>
+        <br/>
+        <br/>
+  
+  <div class="row">
+    <div class="col-lg-4 col-md-6 ">
+      <div class="card">
+        <div class="card-header">
+          <h3>Diabetes</h3>
+        </div>
+        <div class="card-body">
+          <button type="button" class="btn btn-primary" onclick="window.location.href = '{{ url_for('diabetes') }}'">Check Now!</button>
+          
+          
+          
+        </div>
+      </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card">
+              <div class="card-header">
+                  <h3>Parkinsons</h3>
+              </div>
+              <div class="card-body">
+                <button type="button" class="btn btn-primary" onclick="window.location.href = '{{ url_for('parkinsons') }}'"> Check Now!</button>
+                
+                
+              </div>
+            </div>
+          </div>
+          
+      <div class="col-lg-4">
+          <div class="card">
+              <div class="card-header">
+                  <h3>Heart Disease</h3>
+              </div>
+              <div class="card-body">
+                <button type="button" class="btn btn-primary" onclick="window.location.href = '{{ url_for('heartdisease') }}'">  Check Now!</button>
+
+              </div>
+          </div>
+      </div>
+      
+    </div>
+  </div>
+  <h6>Note: This site is just a dummy project. Please don't take any disease prediction seriously. We don't take any responsibility for wrong predictions.</h6>
+  
+{%endblock%}
